@@ -1,5 +1,5 @@
 var createnewprogramModal = document.getElementById('createnewprogramModal')
-var modalBodyInput = createnewprogramModal.querySelector('.modal-body input')
+
 createnewprogramModal.addEventListener('show.bs.modal', function (event) {
   // Button that triggered the modal
   var button = event.relatedTarget
@@ -9,6 +9,7 @@ createnewprogramModal.addEventListener('show.bs.modal', function (event) {
   //
   // Update the modal's content.
   var modalTitle = createnewprogramModal.querySelector('.modal-title')
+  var modalBodyInput = createnewprogramModal.querySelector('.modal-body input')
   
 
   modalTitle.textContent = 'Create a New Program'

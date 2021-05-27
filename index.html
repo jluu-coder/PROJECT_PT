@@ -28,8 +28,12 @@
                 <span class="visually-hidden">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="programs.html">Programs</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Programs</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="programs.html">Hypertrophy</a>
+                <a class="dropdown-item" href="#">Workout 2</a>
+                <a class="dropdown-item" href="#">Workout 3</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
@@ -47,24 +51,25 @@
     </div>
 
     <!-- Program Cards -->
-    <div class="card text-white m-5 mx-auto bg-primary mb-3" style="max-width: 20rem;">
-      <div class="card-header">Workout 1</div>
-      <div class="card-body">
-        <h4 class="card-title">Hypertrophy</h4>
-        <p class="card-text">This is a hypertrophy program that focuses on maximising muscle size</p>
+    <a href="programs.html">
+      <div class="card text-white m-5 mx-auto bg-primary mb-3" style="max-width: 20rem;">
+        <div class="card-header">Hypertrophy</div></a>
+        <div class="card-body">
+          <p class="card-text">This is a hypertrophy program that focuses on maximising muscle size</p>
+        </div>
       </div>
-    </div>
+    
 
     <div class="card text-white m-5 mx-auto bg-secondary mb-3" style="max-width: 20rem;">
       <div class="card-header" >Workout 2</div>
       <div class="card-body">
-        <h4 class="card-title" id="Results"></h4>
-        <p class="card-text" id="Results" ></p>
+        <h4 class="card-title" id="Results">test</h4>
+        <p class="card-text" id="Results" >test</p>
       </div>
     </div>
     
     <!-- Create New Program Modal -->
-    <button type="button" class="btn mx-auto btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#createnewprogramModal">Create New Program</button>
+    <button type="button" class="btn mx-5 btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#createnewprogramModal">Create New Program</button>
 
     <div class="modal fade" id="createnewprogramModal" tabindex="-1" aria-labelledby="createnewprogramModalLabel" aria-hidden="true">
       <div class="modal-dialog">
