@@ -13,9 +13,7 @@
     <title>Project PT</title>
   </head>
   <body>
-
-    
-    
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">PROJECT PT</a>
@@ -26,7 +24,8 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home
+              <a class="nav-link active" href="index.html">Home
+                <span class="visually-hidden">(current)</span>
               </a>
             </li>
             <li class="nav-item dropdown">
@@ -44,13 +43,139 @@
         <nav class="nav-end"><span id="datetime"></span></nav>
       </div>
     </nav>
+
+    <div class = "container">
+
+    <!-- Heading -->
+    <div class="mx-auto" style="width: auto;">
+      <figure class="text-center">
+        <h1>Hypertrophy</h1>
+      </figure>
+    </div>
+
+    <!-- Table 1-->
+    <table class="table table-responsive table-hover">
+      <caption><button type="button" class="btn btn-primary btn-sm">Add Set</button></caption>
+      <thead>
+        <tr>
+          <th scope="col" style="width: 120px;">Barbell Bench Press</th>
+          <th scope="col" style="width: 80px;" >Reps</th>
+          <th scope="col"></th>
+          <th scope="col">Weight(kg)</th>
+          <th scope="col" class="text-muted">Past Set</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Set 1 -->
+        <tr>
+          <th scope="row">Set 1</th>
+          <td>
+            <div class="form-group">
+              <input type="text" class="form-control">
+            </div>
+          </td>
+          <td class="align-middle">X</td>
+          <td>
+            <div class="form-group">
+              <input type="text" class="form-control">
+            </div>
+          </td>
+          <td class="text-muted">10x80</td>
+        </tr>
+
+        <!-- Set 2 -->
+        <tr>
+          <th scope="row">Set 2</th>
+          <td>
+            <div class="form-group">
+              <input type="text" class="form-control">
+            </div>
+          </td>
+          <td class="align-middle">X</td>
+          <td>
+            <div class="form-group">
+              <input type="text" class="form-control">
+            </div>
+          </td>
+          <td class="text-muted">10x80</td>
+        </tr>
+
+        <!-- Set 3 -->
+        <tr>
+          <th scope="row">Set 3</th>
+          <td>
+            <div class="form-group">
+              <input type="text" class="form-control">
+            </div>
+          </td>
+          <td class="align-middle">X</td>
+          <td>
+            <div class="form-group">
+              <input type="text" class="form-control">
+            </div>
+          </td>
+          <td class="text-muted">10x80</td>
+        </tr>
+
+        <!-- Set 4 -->
+        <tr>
+          <th scope="row">Set 4</th>
+          <td>
+            <div class="form-group">
+              <input type="text" class="form-control">
+            </div>
+          </td>
+          <td class="align-middle">X</td>
+          <td>
+            <div class="form-group">
+              <input type="text" class="form-control">
+            </div>
+          </td>
+          <td class="text-muted">10x80</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Table 2-->
+    <table class="table table-bordered table-hover">
+      <caption><button type="button" class="btn btn-primary btn-sm">Add Set</button></caption>
+      <thead>
+        <tr>
+          <th scope="col" style="width: 120px;">Single-arm palm-in banded dumbbell shoulder press</th>
+          <th scope="col" style="width: 80px;">Repitions</th>
+          <th scope="col"></th>
+          <th scope="col" style="width:fit-content;">Weight(kg)</th>
+          <th scope="col" class="text-muted">Past Set</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Set 1</th>
+          <td>
+            <div class="form-group">
+              <input type="text" class="form-control">
+            </div>
+          </td>
+          <td class="align-middle">X</td>
+          <td>
+            <div class="form-group">
+              <input type="text" class="form-control">
+            </div>
+          </td>
+          <td class="text-muted">10x80</td>
+        </tr>
+      </tbody>
+    </table>
     
+    </div>
+    <!-- Date Script -->
     <script>
     var dt = new Date();
     document.getElementById("datetime").innerHTML = dt.toLocaleDateString('en-GB');
     </script>
-    <!--Javascript source to home page js -->
-    <script src="home.js"></script>
+    
+    <!--Javascript source to progams js -->
+    <script src="programs.js"></script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
